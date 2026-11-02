@@ -3,6 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const rutasProductos = require("./routes/productos.js");
+const rutasPedidos = require("./routes/pedidos.js");
+const rutasPersonalizados = require("./routes/personalizados.js");
 
 const app = express();
 app.use(cors());
@@ -22,6 +24,9 @@ app.get("/", function(req, res) {
     res.send("¡Hola desde el servidor de Historias Tejidas!");
 });
 app.use("/api/productos", rutasProductos);
+
+app.use("/api/pedidos", rutasPedidos);
+app.use("/api/personalizados", rutasPersonalizados);
 
 app.listen(PUERTO, function() {
     console.log("Servidor corriendo en http://localhost:" + PUERTO);

@@ -719,6 +719,49 @@ const productos = [
     },
 
     {
+        id: "el-principito",
+        categoria: "personajes",
+        nombre: "El Principito",
+        precio: 150000,
+        imagen: "assets/img/catálogo/elprincipito.png",
+        alt: "Personaje tejido del principito, sobre su planeta, junto a su zorro y su rosa.",
+        historia: "Un pequeño viajero que recorre distintos planetas buscando comprender a las personas y el valor de los vínculos. Su historia refleja la amistad, el cariño y la importancia de mirar más allá de las apariencias.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Planeta",
+                items: [
+                    { nombre: "Sin el planeta", value: "sin", multiplicador: 0.70 },
+                    { nombre: "Con el planeta", value: "con", multiplicador: 1.00, defecto: true }
+                ]
+            },
+            {
+                nombre: "Zorro",
+                items: [
+                    { nombre: "Sin zorro", value: "sin", multiplicador: 0.80 },
+                    { nombre: "Con zorro", value: "con", multiplicador: 1.00, defecto: true }
+                ]
+            },
+            {
+                nombre: "Rosa",
+                items: [
+                    { nombre: "Sin rosa", value: "sin", multiplicador: 0.80 },
+                    { nombre: "Con rosa", value: "con", multiplicador: 1.00, defecto: true }
+                ]
+            }
+        ]
+    },
+
+    {
         id: "frieren",
         categoria: "personajes",
         nombre: "Frieren",
@@ -761,6 +804,8 @@ const productos = [
             }
         ]
     },
+
+    
 
     {
         id: "goku",
@@ -1202,6 +1247,28 @@ const productos = [
     },
 
     {
+        id: "perry-acostado",
+        categoria: "personajes",
+        nombre: "Perry el Ornitorrinco",
+        precio: 35000,
+        imagen: "assets/img/catálogo/peery.png",
+        alt: "Perry el Ornitorrinco tejido a crochet de color azul con sus características distintivas.",
+        historia: "Perry lleva una vida aparentemente tranquila como mascota, pero en secreto es un agente que enfrenta misiones y protege a quienes lo rodean. Su historia representa la valentía de hacer el bien incluso cuando los demás no conocen todo lo que haces.",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            }
+        ]
+    },
+
+    {
         id: "pochita",
         categoria: "personajes",
         nombre: "Pochita",
@@ -1220,6 +1287,38 @@ const productos = [
                     { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
                 ]
             }
+        ]
+    },
+
+     {
+        id: "ratatouille",
+        categoria: "personajes",
+        nombre: "Remi - Ratatouille",
+        precio: 50000,
+        imagen: "assets/img/catálogo/ratatouiu.png",
+        alt: "Personaje Remi de Ratatouille tejido a crochet siendo una rata con vestimenta de chef.",
+        historia: "Remy es una pequeña rata que sueña con ser chef a pesar de que nadie espera eso de él. Su historia demuestra que el talento y la pasión pueden aparecer en los lugares más inesperados..",
+        materiales: "Hilo Coral 100% acrílico y relleno siliconado.",
+        etiqueta: "Amigurumi · Personajes",
+        opciones: [
+            {
+
+                nombre: "Tamaño",
+                items: [
+                    { nombre: "Pequeño (8 cm)", value: "pequeno", multiplicador: 0.60 },
+                    { nombre: "Mediano (20 cm)", value: "mediano", multiplicador: 1.00, defecto: true },
+                    { nombre: "Grande (40 cm)", value: "grande", multiplicador: 2.10 }
+                ]
+            },
+            {
+                nombre: "Cuchara",
+                items: [
+                    { nombre: "Con cuchara", value: "con", multiplicador: 1.00, defecto: true },
+                    { nombre: "Sin cuchara", value: "sin", multiplicador: 0.80 }
+                ]
+            }
+
+
         ]
     },
 
@@ -2852,33 +2951,8 @@ const productos = [
         ]
     },
 
-    {
-        id: "sombrero-minecraft",
-        categoria: "regalo",
-        nombre: "Sombrero minecraft",
-        precio: 45000,
-        imagen: "assets/img/catálogo/sombrero-minecraft.png",
-        alt: "Sombrero tejido a crochet inspirado en un Minion, de color amarillo y con detalle de ojo.",
-        historia: "Amarillo, divertido y difícil de ignorar, este sombrero lleva el espíritu de los Minions a un accesorio. Una pieza para quienes prefieren vestir con humor y personalidad.",
-        materiales: "Lana acrílica suave de grosor medio.",
-        etiqueta: "Accesorio · Regalos",
-        opciones: [
-            {
-                nombre: "Tipo de Sombrero",
-                items: [
-                    { nombre: "Cerdo", value: "cerdo", defecto: true },
-                    { nombre: "Creeper", value: "creeper" },
-                    { nombre: "Enderman", value: "enderman" }
-                ]
-            },
-            {
-                nombre: "Talla",
-                items: [
-                    { nombre: "talla única", value: "unico", defecto: true }
-                ]
-            }
-        ]
-    },
+    
+    
 
     {
         id: "sombrero-snoopy",
